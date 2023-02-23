@@ -61,18 +61,6 @@ const questions = [
       return true;
     },
   },
-  // {
-  //     type: 'input',
-  //     message: "Please enter the path to the project's image",
-  //     name: 'screenshot',
-  //     default: '',
-  //     validate: answer => {
-  //         if (answer.length < 1) {
-  //             return console.log("Please enter a valid path to the project's image");
-  //         }
-  //         return true;
-  //     }
-  // },
   {
     type: "input",
     message:
