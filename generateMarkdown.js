@@ -1,4 +1,12 @@
+
+const path = require('path');
+
 function generateMarkdown(userResponses, userInfo) {
+
+  const filePath = path.join(__dirname);
+  // splice to include only the final directory
+  const dir = filePath.split('/').splice(-1);
+  console.log(dir);
 
   // Generate Table of Contents conditionally based on userResponses
   let draftToC = `## Table of Contents`;
@@ -20,7 +28,7 @@ function generateMarkdown(userResponses, userInfo) {
   let draftMarkdown = 
   `# ${userResponses.title}
 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor)
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${dir}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${dir}?style=flat&logo=appveyor)
   
   Check out the badges hosted by [shields.io](https://shields.io/).
   

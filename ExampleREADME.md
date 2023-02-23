@@ -1,6 +1,6 @@
-# test
+# Title
 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/readme-generator-by-tomking?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/readme-generator-by-tomking?style=flat&logo=appveyor)
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/readme-generator-by-TomKing?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/readme-generator-by-TomKing?style=flat&logo=appveyor)
   
   Check out the badges hosted by [shields.io](https://shields.io/).
   
@@ -9,7 +9,7 @@
   
   *The what, why, and how:* 
   
-  assets/images/readme-demo.gif
+  Description
 
   ## Table of Contents
   * [Installation](#installation)

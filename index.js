@@ -2,10 +2,16 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+const path = require('path');
+
+// const filePath = path.join(__dirname);
+// // splice to include only the final directory
+// const dir = filePath.split('/').splice(-1);
+// console.log(dir);
 
 // Internal modules
 const api = require('./utils/api.js');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./generateMarkdown.js');
 
 // Inquirer prompts for userResponses
 const questions = [
@@ -37,18 +43,18 @@ const questions = [
         }
     },
 
-    {
-        type: 'input',
-        message: "Please enter the repo name as per GitHub",
-        name: 'repo',
-        default: 'Repo Name',
-        validate: answer => {
-            if (answer.length < 1) {
-                return console.log("Please enter a valid repo name");
-            }
-            return true;
-        }
-    },
+    // {
+    //     type: 'input',
+    //     message: "Please enter the repo name as per GitHub",
+    //     name: 'repo',
+    //     default: 'Repo Name',
+    //     validate: answer => {
+    //         if (answer.length < 1) {
+    //             return console.log("Please enter a valid repo name");
+    //         }
+    //         return true;
+    //     }
+    // },
     
     {
         type: 'input',
