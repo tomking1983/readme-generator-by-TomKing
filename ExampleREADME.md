@@ -1,4 +1,4 @@
-# Title
+# test
 
   ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/readme-generator-by-TomKing?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/readme-generator-by-TomKing?style=flat&logo=appveyor)
   
@@ -7,15 +7,13 @@
   
   ## Description 
   
-  *The what, why, and how:* 
+  *Application Description:* 
   
-  Description
+  test
 
   ## Table of Contents
   * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
+  * [Application Preview](#preview)
   * [License](#license)
   
   ## Installation
@@ -23,28 +21,12 @@
   *Steps required to install project and how to get the development environment running:*
   
   test
-  
-  ## Usage 
-  
-  *Instructions and examples for use:*
-  
-  test
-  
-  ## Contributing
-  
-  *If you would like to contribute it, you can follow these guidelines for how to do so.*
-  
-  test
-  
-  ## Tests
+    
+  ## Preview
 
- 
-  
-  *Tests for application and how to run them:*
-  
-  test
-  
-  ## Screenshots/Videos:
+  *Screenshots or videos of the application in use:*
+    
+     
   ![Screenshot deployed application](assets/images/readme-demo.gif)
 
   
