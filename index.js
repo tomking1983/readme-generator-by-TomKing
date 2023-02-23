@@ -91,7 +91,7 @@ const questions = [
         // if file does not exist, return error message
         if (!fs.existsSync(filePath)) {
           return console.log(
-            "Please enter a valid path to the project's image"
+            "Please enter a valid path to the project's image/video"
           );
         }
       }

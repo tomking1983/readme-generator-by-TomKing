@@ -1,4 +1,4 @@
-# test
+# Project Title
 
   ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/readme-generator-by-TomKing?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/readme-generator-by-TomKing?style=flat&logo=appveyor)
   
@@ -9,18 +9,11 @@
   
   *Application Description:* 
   
-  test
+  Project Description
 
   ## Table of Contents
-  * [Installation](#installation)
   * [Application Preview](#preview)
   * [License](#license)
-  
-  ## Installation
-  
-  *Steps required to install project and how to get the development environment running:*
-  
-  test
     
   ## Preview
 
@@ -42,5 +35,5 @@
   
   For any questions, please contact me with the information below:
  
-  Email: tomking151183@gmail.com
+  Email: tom@tom.com
   
