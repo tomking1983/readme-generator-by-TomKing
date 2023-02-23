@@ -34,6 +34,7 @@ function generateMarkdown(userResponses, userInfo) {
   * [Application Preview](#preview)`;
   }
 
+
   // Generate markdown for the top required portions of the README
   let draftMarkdown = `# ${userResponses.title}
 
@@ -56,6 +57,11 @@ function generateMarkdown(userResponses, userInfo) {
   // Add License section since License is required to Table of Contents
   draftMarkdown += `
   * [License](#license)`;
+
+  // Add License section since License is required to Table of Contents
+  draftMarkdown += `
+  * [Questions & Contact](#questions)`;
+
 
   // Optional Installation section
   if (userResponses.installation !== "") {
