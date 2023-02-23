@@ -21,18 +21,35 @@ const questions = [
             return true;
         }
     },
+
     {
         type: 'input',
-        message: "GitHub Repo Name?",
+        message: "Please enter your Email Address",
+        name: 'email',
+        default: 'tomking151183@gmail.com',
+        validate: answer => {
+            const validEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            if (validEmail.test(answer)) {
+                return true;
+            } else {
+                return console.log("Please enter a valid email address.");
+            }
+        }
+    },
+
+    {
+        type: 'input',
+        message: "Please enter the repo name as per GitHub",
         name: 'repo',
-        default: 'readme-generator',
-        validate:  answer => {
+        default: 'Repo Name',
+        validate: answer => {
             if (answer.length < 1) {
-                return console.log("A valid GitHub repo is required for badge.");
+                return console.log("Please enter a valid repo name");
             }
             return true;
         }
     },
+    
     {
         type: 'input',
         message: "Please enter a title for the project?",
@@ -53,6 +70,18 @@ const questions = [
         validate: answer => {
             if (answer.length < 1) {
                 return console.log("Please enter a valid project description");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "Please enter the path to the project's image",
+        name: 'screenshot',
+        default: '',
+        validate: answer => {
+            if (answer.length < 1) {
+                return console.log("Please enter a valid path to the project's image");
             }
             return true;
         }
@@ -83,6 +112,7 @@ const questions = [
         choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
         name: 'license'
     }
+
 ];
 
 function writeToFile(fileName, data) {

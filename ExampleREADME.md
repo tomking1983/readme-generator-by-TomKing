@@ -1,6 +1,6 @@
 # test
 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/test?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/test?style=flat&logo=appveyor)
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/readme-generator-by-tomking?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/readme-generator-by-tomking?style=flat&logo=appveyor)
   
   Check out the badges hosted by [shields.io](https://shields.io/).
   
@@ -9,7 +9,7 @@
   
   *The what, why, and how:* 
   
-  test
+  assets/images/readme-demo.gif
 
   ## Table of Contents
   * [Installation](#installation)
@@ -37,14 +37,20 @@
   test
   
   ## Tests
+
+ 
   
   *Tests for application and how to run them:*
   
   test
   
+  ## Screenshots/Videos:
+  ![Screenshot deployed application](assets/images/readme-demo.gif)
+
+  
   ## License
   
-  MIT License
+  GNU AGPLv3
   
   ---
   
@@ -54,5 +60,5 @@
   
   For any questions, please contact me with the information below:
  
-  GitHub: [@tomking1983](https://api.github.com/users/tomking1983)
+  Email: tomking151183@gmail.com
   

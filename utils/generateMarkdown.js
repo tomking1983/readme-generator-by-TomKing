@@ -92,21 +92,33 @@ function generateMarkdown(userResponses, userInfo) {
   `
   
   ## Tests
+
+ 
   
   *Tests for application and how to run them:*
   
-  ${userResponses.tests}`
+  ${userResponses.tests}
+  
+  ## Screenshots/Videos:
+  ![Screenshot deployed application](${userResponses.screenshot})`
+
+  
   };
+
+
 
 
   // License section is required
   draftMarkdown +=
   `
+
   
   ## License
   
   ${userResponses.license}
   `;
+
+
 
 
   // Questions / About Developer section
@@ -120,18 +132,18 @@ function generateMarkdown(userResponses, userInfo) {
   
   For any questions, please contact me with the information below:
  
-  GitHub: [@${userInfo.login}](${userInfo.url})
+  Email: ${userResponses.email}
   `;
 
   // If GitHub email is not null, add to Developer section
-  if (userInfo.email !== null) {
+  // if (userInfo.email !== null) {
   
-  draftDev +=
-  `
+  // draftDev +=
+  // `
 
-  Email: ${userInfo.email}
+  // Email: ${userResponse.email}
 
-  `};
+  // `};
 
   // Add developer section to markdown
   draftMarkdown += draftDev;
