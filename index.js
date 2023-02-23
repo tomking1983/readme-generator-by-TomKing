@@ -3,6 +3,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const path = require("path");
+const glob = require("glob");
 
 // Internal modules
 const api = require("./utils/api.js");
@@ -22,7 +23,6 @@ const questions = [
       return true;
     },
   },
-
   {
     type: "input",
     message: "Please enter your Email Address",
@@ -68,25 +68,17 @@ const questions = [
     name: "installation",
   },
   {
-    type: "input",
-    message:
-      "If required add relative patch of any screenshots of the project.",
+    type: "list",
     name: "screenshot",
-    validate: (answer) => {
-      // if answer is not empty, check if file exists and then move on to next question, if empty move to usage question
-      if (answer.length > 0) {
-        const filePath = path.join(__dirname, answer);
-        // if file does not exist, return error message
-        if (!fs.existsSync(filePath)) {
-          return console.log(
-            "Please enter a valid path to the project's image/video"
-          );
-        }
-      }
-      return true;
+    message:
+      "Choose an image or video file from the list below: (only valid files in assets/images folder will be shown)",
+    choices: () => {
+      const files = glob.sync(
+        "assets/images/*.{png,jpg,jpeg,gif,mp4,webm,ogg,mov}"
+      );
+      return files.map((file) => path.relative(process.cwd(), file));
     },
   },
-
   {
     type: "input",
     message:

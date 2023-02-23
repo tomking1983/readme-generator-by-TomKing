@@ -39,7 +39,7 @@ function generateMarkdown(userResponses, userInfo) {
 
   ![Badge for GitHub repo total languages](https://img.shields.io/github/languages/count/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor) ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor)
   
-  Check out the badges hosted by [shields.io](https://shields.io/).
+  Badges provided by [shields.io](https://shields.io/).
   
   
   ## Description 
@@ -96,8 +96,6 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Tests
 
- 
-  
   *Tests for application and how to run them:*
   
   ${userResponses.tests}`;
@@ -130,7 +128,7 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Questions?
 
-  <img src="${userInfo.avatar_url}" alt="${userInfo.login}" width="40%" />
+  <img src="${userInfo.avatar_url}" alt="${userInfo.login}" height="50%" />
   
   For any questions, please contact me with the information below:
  
