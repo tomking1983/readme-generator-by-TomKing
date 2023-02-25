@@ -1,4 +1,4 @@
-# Professional README.md generator using node.js
+# Testing file is created and populated
 
   ![Badge for GitHub repo total languages](https://img.shields.io/github/languages/count/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor) ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor)
     
@@ -7,7 +7,7 @@
   
   *Application Description:* 
   
-  Every good project needs a quality README with information about the app - what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel efficitur sapien. Sed ornare tortor lacus, et imperdiet sem tempus a. Morbi nec mattis nibh. Proin elit nibh, bibendum sed vestibulum eget, fringilla eu sem. Cras laoreet leo non commodo molestie. Vivamus ut diam vehicula, porttitor tortor sit amet, sollicitudin nunc. Aliquam erat volutpat. Praesent maximus, sem accumsan pharetra blandit, dui nulla euismod tellus, et cursus enim urna non justo. Phasellus faucibus nec risus ut pretium. Morbi dictum vulputate justo ut varius. Curabitur ut tellus leo. Nullam placerat pharetra dictum. Sed tincidunt eros at massa tincidunt tincidunt. Nunc sit amet lacus sed nisl venenatis ultricies sit amet nec nisi.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -15,32 +15,19 @@
   * [Application Preview](#preview)
   * [License](#license)
   * [Questions & Contact](#questions)
+  * [Contributors](#contributors)
   
   ## Installation
   
   *Steps required to install project and how to get the development environment running:*
   
-  To generate your own README, `git clone` the repo down to your local so you have the Node project on your local.
-
-  Run `npm install i` in order to install the following npm package dependencies:
-
-  * [`inquirer`](https://www.npmjs.com/package/inquirer) will prompt you for your inputs from the command line.
-  * [`axios`](https://www.npmjs.com/package/axios) will fetch your info from the GitHub API.
-  * [`glob`](https://www.npmjs.com/package/glob) will match files using the patterns the shell uses, like stars and stuff.
-
-The application will start by running `node index.js` in the command line.
-
-Answer the prompts in your command line to generate the README.
-
-After answering all the prompts, your README file will be named 'GeneratedREADME.md' and will be ready for you at the root of the repo.
-
-The README has some automatically generated badges for your repo courtesy of [Shields.io](https://shields.io) and will include your profile picture & email from GitHub.
+  Quisque non diam nunc. Proin venenatis vulputate nisl, feugiat imperdiet risus congue eu. Fusce nec orci id tortor pellentesque vulputate. Praesent interdum nunc dolor, quis tempor ante convallis ac. In dignissim fermentum tortor posuere sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt, nisl ut auctor sagittis, sem velit facilisis quam, eu varius diam lorem non urna. Proin semper nibh gravida ornare volutpat. Morbi tempor mauris nec justo eleifend, eu dictum justo interdum. Nulla id auctor purus, vel sodales eros. Donec mollis sollicitudin ipsum id lobortis. Integer diam tellus, consequat non faucibus convallis, convallis vel risus.
   
   ## Credits
 
   *Credits for any resources or third-party assets used:*
   
-  Badges created using [Shields.io](https://shields.io) <br /> To display a list of file the [Glob npm package](https://www.npmjs.com/package/glob) has been used 
+  test
     
   ## Preview
 
@@ -118,7 +105,7 @@ representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at tomking151183@gmail.com.
+reported to the community leaders responsible for enforcement at tomking151182@gmail.com.
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
@@ -197,5 +184,5 @@ For answers to common questions about this code of conduct, see the FAQ at
   
   For any questions, please contact me with the information below:
  
-  Email: tomking151183@gmail.com
+  Email: tomking151182@gmail.com
   

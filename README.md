@@ -14,6 +14,7 @@
   * [Credits](#credits)
   * [Application Preview](#preview)
   * [License](#license)
+  * [Contributors](#contributors)
   * [Questions & Contact](#questions)
   
   ## Installation
