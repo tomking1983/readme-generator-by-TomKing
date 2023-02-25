@@ -19,9 +19,19 @@ function generateMarkdown(userResponses, userInfo) {
   * [Credits](#credits)`;
   }
 
+  if (userResponses.usage !== "") {
+    draftToC += `
+  * [Usage](#usage)`;
+  }
+
   if (userResponses.screenshot !== "") {
     draftToC += `
   * [Application Preview](#preview)`;
+  }
+
+  if (userResponses.tests !== "") {
+    draftToC += `
+  * [Tests](#tests)`;
   }
 
   // Generate markdown for the top required portions of the README
@@ -40,17 +50,17 @@ function generateMarkdown(userResponses, userInfo) {
   // Add Table of Contents to markdown
   draftMarkdown += draftToC;
 
-  // Add License section since License is required to Table of Contents
+  // Add License section to Table of Contents
   draftMarkdown += `
   * [License](#license)`;
 
-  // Add License section since License is required to Table of Contents
+  // Add Contributors section to Table of Contents
+  draftMarkdown += `
+    * [Contributors](#contributors)`;
+
+  // Add Questions section to Table of Contents
   draftMarkdown += `
   * [Questions & Contact](#questions)`;
-
-  draftMarkdown+=`
-  * [Contributors](#contributors)`;
-
 
   // Optional Installation section
   if (userResponses.installation !== "") {
@@ -97,16 +107,16 @@ function generateMarkdown(userResponses, userInfo) {
   ![Screenshot deployed application](${userResponses.screenshot})`;
   }
 
-// Optional Test section
-if (userResponses.tests !== "") {
-  draftMarkdown += `
+  // Optional Test section
+  if (userResponses.tests !== "") {
+    draftMarkdown += `
 
 ## Tests
 
 *Tests for application and how to run them:*
 
 ${userResponses.tests}`;
-}  
+  }
 
   // License section is required
   draftMarkdown += `
@@ -131,8 +141,8 @@ ${userResponses.tests}`;
   Git Hub Profile: [@${userResponses.username}](https://github.com/${userResponses.username})
   `;
 
-// Contributors section
-draftMarkdown += `
+  // Contributors section
+  draftMarkdown += `
 ---
 ## Contributors
 

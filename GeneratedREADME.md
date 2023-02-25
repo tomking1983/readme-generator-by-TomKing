@@ -11,7 +11,9 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Credits](#credits)
+  * [Usage](#usage)
   * [Application Preview](#preview)
+  * [Tests](#tests)
   * [License](#license)
   * [Questions & Contact](#questions)
   * [Contributors](#contributors)
@@ -116,7 +118,7 @@ representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at tom@tom.com.
+reported to the community leaders responsible for enforcement at to@tom.com.
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
@@ -195,6 +197,6 @@ For answers to common questions about this code of conduct, see the FAQ at
   
   For any questions, please contact me with the information below:
  
-  Email: tom@tom.com <br />
+  Email: to@tom.com <br />
   Git Hub Profile: [@tomking1983](https://github.com/tomking1983)
   
