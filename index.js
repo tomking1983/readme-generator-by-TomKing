@@ -65,6 +65,12 @@ const questions = [
     name: "installation",
   },
   {
+    type: "input",
+    message:
+      "If required, please provide instructions and examples for use",
+    name: "usage",
+  },
+  {
     type: "list",
     name: "screenshot",
     message:
@@ -75,6 +81,11 @@ const questions = [
       );
       return files.map((file) => path.relative(process.cwd(), file));
     },
+  },
+  {
+    type: "input",
+    message: "If required, please provide tests for the application",
+    name: "tests",
   },
   {
     type: "input",

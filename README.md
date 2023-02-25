@@ -1,7 +1,6 @@
 # Professional README.md generator using node.js
 
-  ![Badge for GitHub repo total languages](https://img.shields.io/github/languages/count/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor) ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor)
-    
+  ![Badge for GitHub repo total languages](https://img.shields.io/github/license/tomking1983/readme-generator-by-TomKing?style=for-the-badge) ![Badge for GitHub repo total languages](https://img.shields.io/github/languages/count/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor) ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/tomking1983/readme-generator-by-TomKing?style=for-the-badge&logo=appveyor)
   
   ## Description 
   
@@ -14,8 +13,8 @@
   * [Credits](#credits)
   * [Application Preview](#preview)
   * [License](#license)
-  * [Contributors](#contributors)
   * [Questions & Contact](#questions)
+  * [Contributors](#contributors)
   
   ## Installation
   
@@ -37,6 +36,12 @@ After answering all the prompts, your README file will be named 'GeneratedREADME
 
 The README has some automatically generated badges for your repo courtesy of [Shields.io](https://shields.io) and will include your profile picture & email from GitHub.
   
+  ## Usage
+
+  *Examples for use:*
+  
+  This application would be used to create a professional README file
+  
   ## Credits
 
   *Credits for any resources or third-party assets used:*
@@ -49,6 +54,12 @@ The README has some automatically generated badges for your repo courtesy of [Sh
     
      
   ![Screenshot deployed application](assets/images/readme-demo.gif)
+
+## Tests
+
+*Tests for application and how to run them:*
+
+Full testing has been carried out. If any bugs are found contact me by email which can be found in the [Questions](#questions) section
 
   
   ## License
@@ -198,5 +209,6 @@ For answers to common questions about this code of conduct, see the FAQ at
   
   For any questions, please contact me with the information below:
  
-  Email: tomking151183@gmail.com
+  Email: tomking151183@gmail.com <br />
+  [Git Hub Profile](https://github.com/tomking1983)
   

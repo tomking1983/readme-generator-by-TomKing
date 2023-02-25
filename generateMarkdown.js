@@ -27,8 +27,7 @@ function generateMarkdown(userResponses, userInfo) {
   // Generate markdown for the top required portions of the README
   let draftMarkdown = `# ${userResponses.title}
 
-  ![Badge for GitHub repo total languages](https://img.shields.io/github/languages/count/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor) ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor)
-    
+  ![Badge for GitHub repo total languages](https://img.shields.io/github/license/${userResponses.username}/${dir}?style=for-the-badge) ![Badge for GitHub repo total languages](https://img.shields.io/github/languages/count/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor) ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${dir}?style=for-the-badge&logo=appveyor)
   
   ## Description 
   
@@ -64,6 +63,17 @@ function generateMarkdown(userResponses, userInfo) {
   ${userResponses.installation}`;
   }
 
+  // Optional Usage section
+  if (userResponses.usage !== "") {
+    draftMarkdown += `
+  
+  ## Usage
+
+  *Examples for use:*
+  
+  ${userResponses.usage}`;
+  }
+
   // Optional Credits section
   if (userResponses.credits !== "") {
     draftMarkdown += `
@@ -87,6 +97,17 @@ function generateMarkdown(userResponses, userInfo) {
   ![Screenshot deployed application](${userResponses.screenshot})`;
   }
 
+// Optional Test section
+if (userResponses.tests !== "") {
+  draftMarkdown += `
+
+## Tests
+
+*Tests for application and how to run them:*
+
+${userResponses.tests}`;
+}  
+
   // License section is required
   draftMarkdown += `
 
@@ -106,7 +127,8 @@ function generateMarkdown(userResponses, userInfo) {
   
   For any questions, please contact me with the information below:
  
-  Email: ${userResponses.email}
+  Email: ${userResponses.email} <br />
+  Git Hub Profile: [@${userResponses.username}](https://github.com/${userResponses.username})
   `;
 
 // Contributors section
