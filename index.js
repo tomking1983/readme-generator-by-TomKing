@@ -15,7 +15,6 @@ const questions = [
     type: "input",
     message: "Please enter your GitHub Username? (Without the @)",
     name: "username",
-    default: "tomking1983",
     validate: (answer) => {
       if (answer.length < 1) {
         return console.log("A valid GitHub username is required.");
@@ -27,7 +26,7 @@ const questions = [
     type: "input",
     message: "Please enter your Email Address",
     name: "email",
-    default: "tomking151183@gmail.com",
+    default: "example@example.com",
     validate: (answer) => {
       const validEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
       if (validEmail.test(answer)) {
@@ -41,7 +40,6 @@ const questions = [
     type: "input",
     message: "Please enter a title for the project?",
     name: "title",
-    default: "Project Title",
     validate: (answer) => {
       if (answer.length < 1) {
         return console.log("Please enter a valid project title");
@@ -53,7 +51,6 @@ const questions = [
     type: "input",
     message: "Please enter a description of the project",
     name: "description",
-    default: "Project Description",
     validate: (answer) => {
       if (answer.length < 1) {
         return console.log("Please enter a valid project description");
@@ -82,21 +79,8 @@ const questions = [
   {
     type: "input",
     message:
-      "Please provide instructions and examples of your project in use for the Usage section.",
-    name: "usage",
-  },
-  {
-    type: "input",
-    message:
-      "If required, please provide guidelines on how developers can contribute to your project.",
-    name: "contributing",
-  },
-
-  {
-    type: "input",
-    message:
-      "If required, please provide any tests written for your application and provide examples on how to run them.",
-    name: "tests",
+      "If required, list any resources or third-party assets that require attribution. To add a link to the resource, please use the following format: [Title](URL)",
+    name: "credits",
   },
   {
     type: "list",
@@ -133,11 +117,11 @@ async function init() {
     // Prompt Inquirer questions
     const userResponses = await inquirer.prompt(questions);
     console.log("Your responses: ", userResponses);
-    console.log("Thank you for your responses! Fetching your GitHub data...");
+    console.log("Thank you for your responses! We are fetching your GitHub data...");
 
     // Call GitHub api for user info
     const userInfo = await api.getUser(userResponses);
-    console.log("Your GitHub user info: ", userInfo);
+    console.log("GitHub user info: ", userInfo);
 
     // Pass Inquirer userResponses and GitHub userInfo to generateMarkdown
     console.log("Generating your README...");
@@ -145,7 +129,7 @@ async function init() {
     console.log(markdown);
 
     // Write markdown to file
-    await writeFileAsync("ExampleREADME.md", markdown);
+    await writeFileAsync("GeneratedREADME.md", markdown);
   } catch (error) {
     console.log(error);
   }
