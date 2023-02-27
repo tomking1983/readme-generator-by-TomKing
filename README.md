@@ -11,10 +11,12 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Credits](#credits)
+  * [Usage](#usage)
   * [Application Preview](#preview)
+  * [Tests](#tests)
   * [License](#license)
-  * [Questions & Contact](#questions)
   * [Contributors](#contributors)
+  * [Questions & Contact](#questions)
   
   ## Installation
   
