@@ -56,7 +56,7 @@ function generateMarkdown(userResponses, userInfo) {
 
   // Add Contributors section to Table of Contents
   draftMarkdown += `
-    * [Contributors](#contributors)`;
+  * [Contributors](#contributors)`;
 
   // Add Questions section to Table of Contents
   draftMarkdown += `
